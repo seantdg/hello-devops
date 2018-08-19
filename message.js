@@ -1,11 +1,14 @@
+'use strict';
+
 module.exports = {
     getMessage: function (name) {
-        if(name) {
-            return "Hello " + name + ".";
+        var message = "";
+        if (name) {
+            message = "Hello " + name + ".";
+        } else {
+            message = "Hello friend.";
         }
-        else {
-            return "Hello friend.";
-        }
+        return message;
     }
 
 };

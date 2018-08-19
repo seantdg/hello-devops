@@ -1,6 +1,6 @@
-const express = require('express')
-const app = express()
-const message = require('./message')
+var express = require('express')
+var app = express()
+var message = require('./message')
 
 app.get('/', (req, res) => res.send(message.getMessage("Blu")))
 
